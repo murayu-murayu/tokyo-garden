@@ -48,6 +48,22 @@ export const Post = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    apiEndpoint: {
+      type: "string",
+      required: true,
+    },
+    apiKey: {
+      type: "string",
+      required: true,
+    },
+    apiValue: {
+      type: "string",
+      required: true,
+    },
+    image: {
+      type: "string",
+      required: true,
+    },
   },
   computedFields,
 }));
