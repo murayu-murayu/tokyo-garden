@@ -18,8 +18,28 @@ export default function Home() {
         <article key={post._id}>
           <Link href={post.slug}>
             <h2>{post.title}</h2>
+            {post.description && <p>{post.description}</p>}
+            <div className="group item">
+              {/* <!-- Desktop Image --> */}
+              <div className="hidden w-full duration-200 md:block group-hover:scale-110">
+                <Image
+                  src={`/images/desktop/${post.image}`}
+                  alt={post.title}
+                  width={1024}
+                  height={576}
+                />
+              </div>
+              {/* <!-- Mobile Image --> */}
+              <div className="w-full md:hidden">
+                <Image
+                  src={`/images/mobile/${post.image}`}
+                  alt={post.title}
+                  width={1024}
+                  height={576}
+                />
+              </div>
+            </div>
           </Link>
-          {post.description && <p>{post.description}</p>}
         </article>
       ))}
     </div>
