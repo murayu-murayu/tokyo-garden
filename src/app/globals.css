@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 #hero {
-  background-image: url("/images/desktop/koishikawa-korakuen-m.jpg");
+  background-image: url("/images/desktop/tokyo_cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  height: 30vh;
 }
 
 @media (max-width: 576px) {
   #hero {
-    background-image: url("/images/mobile/koishikawa-korakuen-m.jpg");
+    background-image: url("/images/mobile/tokyo_cover.jpg");
     background-position: center;
+    height: 20vh;
   }
 }
