@@ -48,10 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main>
-              東京の庭園を紹介します。
-              {children}
-            </main>
+            <main>{children}</main>
           </div>
           <Analytics />
         </ThemeProvider>
