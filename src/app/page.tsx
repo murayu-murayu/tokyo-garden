@@ -4,16 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="prose dark:prose-invert">
-      {/* <div>
-        <Image
-          width={512}
-          height={512}
-          src="/images/desktop/image-interactive.jpg"
-          alt="Platforms on Vercel"
-          className="w-48 h-48"
-        />
-      </div> */}
+    <div className="py-6 prose max-w-6xl dark:prose-invert">
+      東京の街中にひっそりと佇む、自然と伝統の融合した美しい庭園を紹介します。
+      <br />
       {allPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
