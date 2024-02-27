@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TOKYO GARDEN
 
-## Getting Started
+## サイトについて
 
-First, run the development server:
+- 東京の歴史を今に伝え、観光需要も高い数々の庭園を紹介するサイト
+- 東京都が公開しているオープンデータカタログサイト上の`公共施設一覧取得API`からデータを取得し、サイトに表示
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 使用技術等
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js, React, Typescript, Tailwind CSS を使用
+- マークダウン形式で記載した記事ファイルを、Contentlayer を用いてパースすることで記事ページを生成
+- マークダウンファイル上で、API のエンドポイント・キーについても指定し、当該 API から各施設の情報を取得し、記事ページ上に表示している
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ローカルにおける実行方法
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 必要なパッケージをインストール
 
-## Learn More
+  `npm install`
 
-To learn more about Next.js, take a look at the following resources:
+- 開発サーバーを実行
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  `num run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ブラウザで http://localhost:3000 にアクセス
 
-## Deploy on Vercel
+## その他
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+画像データは、写真 AC・イラスト AC のフリー素材を使用
